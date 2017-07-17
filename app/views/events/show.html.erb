@@ -1,0 +1,6 @@
+<h2><%= @event.name %></h2>
+<ul>
+  <li>Host: <%= link_to @event.creator.name, @event.creator %></li>
+  <li>Location: <%= @event.location %></li>
+  <li>Date: <%= @event.date.strftime("%B %d, %Y") %></li>
+</ul>
